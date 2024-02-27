@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Sliding Backgrounds</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 15s infinite;
+  }
+
+  @keyframes slideBackground {
+    0% {
+      background-image: url('https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-wallpaper-27.jpg');
+    }
+    33.33% {
+      background-image: url('https://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2016/03/fall-trees-road-1.jpg');
+    }
+    66.66% {
+      background-image: url('https://4.bp.blogspot.com/-PU-xRtlftYo/T2i3dAeU6gI/AAAAAAAABLU/_9D4PRhloh8/s1600/Peaceful+River+Wallpapers+1.jpg');
+    }
+    100% {
+      background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15.jpg');
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+
+  .content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 1.2em;
+  }
+
+  /* Responsive adjustments */
+  @media only screen and (max-width: 600px) {
+    .content h1 {
+      font-size: 2em;
+    }
+    .content p {
+      font-size: 1em;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="background"></div>
+  <div class="content">
+    <h1>"हज़ारों ख्वाहिशें ऐसी कि हर ख्वाहिश पे दम निकले
+        बहुत निकले मेरे अरमाँ, लेकिन फिर भी कम निकले""In the journey of life, we walk on lonely paths,
+        Burning with the solitude hidden in the depths of the heart.
+        In the desire to attain someone,
+        We lose ourselves and find the Divine.</h1>
+    <p>This is a demonstration of sliding background images with HTML, CSS, and JavaScript.</p>
+  </div>
+</div>
+</body>
+</html>
